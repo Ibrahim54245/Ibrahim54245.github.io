@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1; 
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    color: #555555;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.buttonstyle {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttonstyle:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .project-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .project-item {
+        max-width: 45%; 
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    padding-top: 60px; /* hier ruimte voor navbar */
+    box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red; /* fel rood */
+  color:red;
+  height: 50px;
+  z-index: 1000;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  overflow: hidden;
+}
+
+.navbar li a {
+  display: block;
+  color: white; /* witte tekst */
+  text-align: center;
+  padding: 14px 0;
+  text-decoration: none;
+  height: 100%;
+  font-weight: bold;
+}
